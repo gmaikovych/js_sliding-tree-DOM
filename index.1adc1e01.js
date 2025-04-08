@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelector(".tree").querySelectorAll("li").forEach(function(e){var t=e.querySelector("ul");if(t){var n=Array.from(e.childNodes).find(function(e){return e.nodeType===Node.TEXT_NODE&&""!==e.textContent.trim()});if(n){var o=document.createElement("span");o.textContent=n.textContent.trim(),n.parentNode.insertBefore(o,n),n.remove(),t.style.display="block",o.addEventListener("click",function(){t.style.display="none"===t.style.display?"block":"none"})}}})});
+//# sourceMappingURL=index.1adc1e01.js.map
